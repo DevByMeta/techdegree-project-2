@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Arimo');
 
-body {
-	margin: 0;
-	text-align: center;
-	padding-bottom: 30px;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-h1,
-h2,
-h3,
-p,
-a {
-	font-family: "Lato", "Times New Roman", Times, serif;
+body {
+	font-family: "Arimo", "Times New Roman", Times, serif;
+}
+
+header, main, footer {
+	text-align: center;
 }
 
 header {
@@ -53,7 +53,7 @@ a:link, a:visited, a:hover, a:active {
 
 .main-heading img {
 	width: 75%;
-	margin: 0 auto;
+	margin: 5px auto;
 }
 
 .main-heading p, .col p {
@@ -73,6 +73,7 @@ main img {
 .contact {
 	margin-top: 5em;
 	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .contact, footer {
@@ -88,6 +89,7 @@ main img {
 footer {
 	border-top: solid 1px lightgrey;
 	height: 50px;
+	padding-bottom: 10px;
 }
 
 footer p, footer nav {
@@ -102,8 +104,49 @@ footer nav {
 	float: right;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+.bottom-nav-items {
+	display: none;
+}
+
+@media (min-width: 768px) {
+
+	main {
+		overflow: hidden;
+	}
+
+	.col {
+		margin-bottom: 2em;
+	}
+
+	.col-1 {
+		float: left;
+		width: 50%;
+	}
+
+	.col-2 {
+		float: right;
+		width: 50%;
+	}
+
+	.contact {
+		padding-top: 2em;
+	}
+
+	.contact h2 {
+		width: 100%;
+	}
+
+	#toTop {
+		display: none;
+		margin: 0;
+	}
+
+	footer {
+		padding-bottom: 3em;
+	}
+
+	.bottom-nav-items {
+		display: inline-block;
+		padding-right: 2em;
+	}
 }

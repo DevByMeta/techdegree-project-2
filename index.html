@@ -3,6 +3,7 @@
 <head>
 	<title></title>
 	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
@@ -26,47 +27,43 @@
 
 	<main id="portfolio">
 		<h2>Portfolio</h2>
-		<div class="marketing-project col">
+		<div class="marketing-project col col-1">
 			<img src="images/portfolio-1.png">
 			<h3>Marketing Page</h3>
 			<p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
 		</div><!-- end marketing-project -->
 
-		<div class="search-project col">
+		<div class="search-project col col-1">
 			<img src="images/portfolio-2.png">
 			<h3>Search Page</h3>
 			<p>This project searches through a specific database to find information that the user is trying to look up.</p>
 		</div><!-- end search-project -->
 
-		<div class="travel-project col">
+		<div class="travel-project col col-1">
 			<img src="images/portfolio-3.png">
 			<h3>Travel App</h3>
 			<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
 		</div><!-- end travel-project -->
 
-		<div class="map-project col">
+		<div class="map-project col col-2">
 			<img src="images/portfolio-4.png">
 			<h3>Map of Favorite Spots</h3>
 			<p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
 		</div><!-- end map-project -->
 
-		<div class="gallery-project col">
+		<div class="gallery-project col col-2">
 			<img src="images/portfolio-5.png">
 			<h3>Photo Gallery</h3>
 			<p>This project shows pictures from a recent trip to the viewer and follows them to easily navigate through the photos.</p>
 		</div><!-- end gallery-project -->
 
-		<div class="calc-project col">
+		<div class="calc-project col col-2">
 			<img src="images/portfolio-6.png">
 			<h3>Calculator</h3>
 			<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
 		</div><!-- end calc-project -->
 
-		<div class="skills">
-			
-		</div><!-- end skills -->
-
-		<div class="contact" id="contact">
+		<div class="contact clearfix" id="contact">
 			<h2>Contact</h2>
 			<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
 			<p>Phone: <a href="tel:+19156676590">+1 (915) 667-6590</a></p>
@@ -77,7 +74,10 @@
 	<footer>
 		<p>Andrew Alarcon</p>
 		<nav class="footer-nav">
-			<a href="#top">Back to top</a>
+			<a href="#top" id="toTop">Back to top</a>
+			<a href="#top" class="bottom-nav-items">Home</a>
+			<a href="#portfolio" class="bottom-nav-items">Portfolio</a>
+			<a href="#contact" class="bottom-nav-items">Contact</a>
 		</nav>
 	</footer>
 </body>
