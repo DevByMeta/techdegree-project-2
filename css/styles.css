@@ -110,6 +110,23 @@ footer nav {
 
 @media (min-width: 768px) {
 
+	.main-nav ul {
+		display: inline-block;
+		width: 50%;
+		margin: 10px auto;
+	}
+
+	.main-heading p {
+		float: left;
+		width: 60%;
+		padding: 2em .5em;
+	}
+
+	.main-heading img {
+		float: right;
+		width: 40%;
+	}
+
 	main {
 		overflow: hidden;
 	}
