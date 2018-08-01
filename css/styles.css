@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:700');
 
 .clearfix::after {
     content: "";
@@ -14,14 +15,18 @@ header, main, footer {
 	text-align: center;
 }
 
-header {
-	background-color: #f9f9f9;
+.header {
+	background-color: #f4b642;
 }
 
 a:link, a:visited, a:hover, a:active {
 	color: #333;
 	text-decoration: none;
 	font-weight: bold;
+}
+
+.project-headers {
+	font-family: "Catamaran", "Times New Roman", Times, serif;
 }
 
 .header h1 {
@@ -32,7 +37,7 @@ a:link, a:visited, a:hover, a:active {
 	padding: 20px 0 15px;
 }
 
-.main-nav ul {
+.main-nav ul, .skills ul {
 	list-style-type: none;
 	padding: 0;
 }
@@ -68,6 +73,22 @@ a:link, a:visited, a:hover, a:active {
 
 main img {
 	width: 90%;
+}
+
+.skills p {
+	width: 90%;
+	margin: 0 auto 30px;
+}
+
+.skills ul {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.skills li {
+	background-color: #f4b642;
+	display: inline;
+	padding: 10px 30px;
 }
 
 .contact {
@@ -127,7 +148,7 @@ footer nav {
 		width: 55%;
 		padding: 2em .5em;
 		margin: 10px auto;
-		font-size: 1.2em;
+		font-size: 1.2rem;
 		text-align: justify;
 		word-spacing: -2px;
 	}
@@ -140,6 +161,13 @@ footer nav {
 
 	main {
 		overflow: hidden;
+	}
+
+	.skills {
+   		display: table;
+   		content: "";
+   		clear: both;
+   		margin: 0 auto;
 	}
 
 	.col {
@@ -181,5 +209,43 @@ footer nav {
 	.bottom-nav-items {
 		display: inline-block;
 		padding-right: 2em;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.header {
+   		display: table;
+   		content: "";
+   		clear: both;
+   		width: 100%;
+	}
+
+	.header h1 {
+		float: left;
+		margin-left: 2em;
+	}
+
+	.header nav {
+		float: right;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.header ul {
+		width: 100%;
+		margin: 20px auto;
+	}
+
+	.header h1, .header nav {
+		display: inline;
+	}
+
+	.col {
+		width: 33.33%;
+	}
+
+	footer {
+		padding-bottom: 0;
 	}
 }
