@@ -116,15 +116,26 @@ footer nav {
 		margin: 10px auto;
 	}
 
+	.main-nav li {
+		display: inline;
+		background-color: inherit;
+		margin: 0 1em;
+	}
+
 	.main-heading p {
 		float: left;
-		width: 60%;
+		width: 55%;
 		padding: 2em .5em;
+		margin: 10px auto;
+		font-size: 1.2em;
+		text-align: justify;
+		word-spacing: -2px;
 	}
 
 	.main-heading img {
 		float: right;
 		width: 40%;
+		margin-right: 5px;
 	}
 
 	main {
